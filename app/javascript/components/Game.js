@@ -19,7 +19,7 @@ const Game = (props) =>{
     return (
         <div>
             {!showEditForm && renderGame()}
-            {showEditForm && <GameForm updateGame={updateGame} id={id}/>}
+            {showEditForm && <GameForm updateGame={updateGame} id={id} title={title} genre={genre}/>}
         </div>
     )
 }

@@ -27,7 +27,7 @@ class GamesController < ApplicationController
         @game = Game.find(params[:id])
 
         if(@game.update(game_params))
-            remder json: @game
+            render json: @game
         end
     end
 
