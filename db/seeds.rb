@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "faker"
+catagories = ["title", "genre", "likes"]
+10.times do |i|
+  Game.create(
+    title: Faker::Game.title,
+    genre: Faker::Game.genre,
+    likes: rand(50...2000)
+  )
+end 
+
+
+puts "seeded #{Game.all.size}"
