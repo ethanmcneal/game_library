@@ -5,9 +5,12 @@ const GameForm = (props) =>{
     const [showForm, setShowForm] = useState(false)
     const [title, setTitle] = useState(initTitle ? initTitle : '')
     const [genre, setGenre] = useState(initGenre ? initGenre : '')
+    // I have a different useState for showEditForm because I made it so the button you press to make the new form 
+    //come up wont be there for the edit form, this took awhile to figure out but it works
     const [showEditForm, setShowEditForm] = useState(true)
     // TODO fix the edit form
-    // I am having a hard time making it so when I click edit the edited game appears back in the list instead of having to hit the show games again,
+    // I am having a hard time making it so when I click edit the edited game appears back in the list 
+    //instead of having to hit the show games again,
 
     const Form = () => {
         const handleSubmit = (event) => {

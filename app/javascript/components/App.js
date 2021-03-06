@@ -26,6 +26,16 @@ const App = () => {
         }
     }
 
+    // const likeButton = async (obj, id) => {
+    //     try {
+    //         let response = await axios.put(`/games/${id}`, obj)
+    //         let likeGame = games.map(g => g.id !== id ? g : response.data)
+    //         setGames(likeGame)
+    //     } catch(err) {
+    //         console.log(err)
+    //     }
+    // }
+
     const deleteGame = async (id) =>{
         console.log('delete clicked on game with id:', id)
         try {
@@ -54,7 +64,7 @@ const App = () => {
             <h1>Games App</h1>
             <GameForm postGame={postGame}/>
             <button onClick={getGames}>Show Games</button>
-            <Games games={games} deleteGame={deleteGame} updateGame={updateGame}/>
+            <Games games={games} deleteGame={deleteGame} updateGame={updateGame} />
         </div>
     )
 }
