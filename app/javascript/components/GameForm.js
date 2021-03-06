@@ -5,6 +5,8 @@ const GameForm = (props) =>{
     const [showForm, setShowForm] = useState(false)
     const [title, setTitle] = useState('')
     const [genre, setGenre] = useState('')
+    const [showEditForm, setShowEditForm] = useState(false)
+    // TODO fix the damn edit form
 
     const Form = () => {
         const handleSubmit = (event) => {
@@ -17,10 +19,10 @@ const GameForm = (props) =>{
             postGame({title, genre})}
 
             setTitle('')
-            setGenre('')
-            
-
+            setGenre('')            
         }
+
+        
         return (
             <form onSubmit={handleSubmit}>
                 <p>Game Title</p>
