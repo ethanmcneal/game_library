@@ -61,7 +61,7 @@ const App = () => {
 
     return (
         <div>
-            <h1>Games App</h1>
+            <h1>Game Library</h1>
             <GameForm postGame={postGame}/>
             <button onClick={getGames}>Show Games</button>
             <Games games={games} deleteGame={deleteGame} updateGame={updateGame} />
