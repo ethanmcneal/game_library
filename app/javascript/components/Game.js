@@ -8,7 +8,7 @@ const Game = (props) =>{
     
     const renderGame = () => {
     return (
-        <div>
+        <div className='game-container'>
         <h3>{title}</h3>
         <h4>genre: {genre}</h4>
         {/* <button onClick={likes + 1}>Like! {likes}</button> */}
